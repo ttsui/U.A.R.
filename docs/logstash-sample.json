@@ -1,0 +1,162 @@
+{"took": 18160, "timed_out": false, "_shards": {
+    "total": 6,
+    "successful": 6,
+    "failed": 0
+}, "hits": {
+    "total": 4,
+    "max_score": null,
+    "hits": [
+        {
+            "_index": "logstash-long-2014.06.30",
+            "_type": "java-logback-event:IdeaLinkClicked",
+            "_id": "68E27356-0064-11E4-AEFD-96F9DE56FB62",
+            "_score": null,
+            "_source": {
+                "@source": "audit",
+                "@tags": ["instance:blue", "event", "environment_production"],
+                "@fields": {
+                    "@mdc": {},
+                    "author_name": "Marina Mata",
+                    "thread_name": "play-akka.actor.default-dispatcher-27617",
+                    "eventType": "IdeaLinkClicked",
+                    "recipient": "fcruz",
+                    "user_agent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)",
+                    "stock_name": "Lojas Renner SA",
+                    "uri_path": "/api/ideas/jUK1Hn6u-zZShd01nEQ1-LvTO955W_gj_oSp6L2Zt3W9buVe3Rc5GVkSBZd57PwmfKqE9IgRbpjdpDWztCF6Sw/public?_=1404139196233",
+                    "sent_date": "2014-06-30",
+                    "stock_ticker": "LREN3 BZ",
+                    "retention_period": "long",
+                    "client_ip": "213.52.242.166",
+                    "severity": "notice"
+                },
+                "@timestamp": "2014-06-30T14:39:57.128+0000",
+                "@environment": "production",
+                "@source_path": "/",
+                "@application": "bse",
+                "@uuid": "68E27356-0064-11E4-AEFD-96F9DE56FB62",
+                "@source_host": "production-bseapp-001.mgmt.pg.net.local",
+                "@message": "IdeaLinkClicked",
+                "@source_version": "1.0.1773",
+                "@type": "java-logback-event:IdeaLinkClicked",
+                "@location": "pg",
+                "@storage_class": "long",
+                "@es_index": "logstash-long-2014.06.30"
+            },
+            "sort": [1404139197128]
+        },
+        {
+            "_index": "logstash-long-2014.06.30",
+            "_type": "java-logback-event:IdeaLinkClicked",
+            "_id": "6D32EFBA-0061-11E4-8104-B645E8B02034",
+            "_score": null,
+            "_source": {
+                "@source": "audit",
+                "@tags": ["instance:blue", "event", "environment_production"],
+                "@fields": {
+                    "@mdc": {},
+                    "author_name": "Jonathan Durant",
+                    "thread_name": "play-akka.actor.default-dispatcher-27478",
+                    "eventType": "IdeaLinkClicked",
+                    "recipient": "bdevedjian",
+                    "user_agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36",
+                    "stock_name": "Swedish Match AB",
+                    "uri_path": "/api/ideas/XkOudCC0MXnjWlub7Q2ydhubCAOksGOipbR0Mys2j8hRAVIREhY5jAXVvT1YhJ0yF6bgHXHjN-UbI-LY2u1UVg/public?_=1404137915128",
+                    "sent_date": "2014-06-30",
+                    "stock_ticker": "SWMA SS",
+                    "retention_period": "long",
+                    "client_ip": "80.169.164.35",
+                    "severity": "notice"
+                },
+                "@timestamp": "2014-06-30T14:18:36.209+0000",
+                "@environment": "production",
+                "@source_path": "/",
+                "@application": "bse",
+                "@uuid": "6D32EFBA-0061-11E4-8104-B645E8B02034",
+                "@source_host": "production-bseapp-002.mgmt.pg.net.local",
+                "@message": "IdeaLinkClicked",
+                "@source_version": "1.0.1773",
+                "@type": "java-logback-event:IdeaLinkClicked",
+                "@location": "pg",
+                "@storage_class": "long",
+                "@es_index": "logstash-long-2014.06.30"
+            },
+            "sort": [1404137916209]
+        },
+        {
+            "_index": "logstash-long-2014.06.30",
+            "_type": "java-logback-event:IdeaLinkClicked",
+            "_id": "68861DB6-0061-11E4-8104-B645E8B02034",
+            "_score": null,
+            "_source": {
+                "@source": "audit",
+                "@tags": ["instance:blue", "event", "environment_production"],
+                "@fields": {
+                    "@mdc": {},
+                    "author_name": "Guido Schickentanz",
+                    "thread_name": "play-akka.actor.default-dispatcher-27483",
+                    "eventType": "IdeaLinkClicked",
+                    "recipient": "bdevedjian",
+                    "user_agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36",
+                    "stock_name": "TUI AG",
+                    "uri_path": "/api/ideas/XkOudCC0MXnjWlub7Q2ydhubCAOksGOipbR0Mys2j8gLKLL9_kqAlJM1jCRuLcb2-bB3xQ0NlyLzjwYwJTnSfA/public?_=1404137907850",
+                    "sent_date": "2014-06-30",
+                    "stock_ticker": "TUI1 GY",
+                    "retention_period": "long",
+                    "client_ip": "80.169.164.35",
+                    "severity": "notice"
+                },
+                "@timestamp": "2014-06-30T14:18:28.887+0000",
+                "@environment": "production",
+                "@source_path": "/",
+                "@application": "bse",
+                "@uuid": "68861DB6-0061-11E4-8104-B645E8B02034",
+                "@source_host": "production-bseapp-002.mgmt.pg.net.local",
+                "@message": "IdeaLinkClicked",
+                "@source_version": "1.0.1773",
+                "@type": "java-logback-event:IdeaLinkClicked",
+                "@location": "pg",
+                "@storage_class": "long",
+                "@es_index": "logstash-long-2014.06.30"
+            },
+            "sort": [1404137908887]
+        },
+        {
+            "_index": "logstash-long-2014.06.30",
+            "_type": "java-logback-event:IdeaLinkClicked",
+            "_id": "6599FFD2-0061-11E4-AEFD-96F9DE56FB62",
+            "_score": null,
+            "_source": {
+                "@source": "audit",
+                "@tags": ["instance:blue", "event", "environment_production"],
+                "@fields": {
+                    "@mdc": {},
+                    "author_name": "Peter Frawley",
+                    "thread_name": "play-akka.actor.default-dispatcher-27453",
+                    "eventType": "IdeaLinkClicked",
+                    "recipient": "bdevedjian",
+                    "user_agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36",
+                    "stock_name": "Heineken NV",
+                    "uri_path": "/api/ideas/XkOudCC0MXnjWlub7Q2ydhubCAOksGOipbR0Mys2j8hCMbKZAk8CDhHZx4WWW6sBubMCWYgKwacqZJcvH2i03g/public?_=1404137902328",
+                    "sent_date": "2014-06-30",
+                    "stock_ticker": "HEIA NA",
+                    "retention_period": "long",
+                    "client_ip": "80.169.164.35",
+                    "severity": "notice"
+                },
+                "@timestamp": "2014-06-30T14:18:23.450+0000",
+                "@environment": "production",
+                "@source_path": "/",
+                "@application": "bse",
+                "@uuid": "6599FFD2-0061-11E4-AEFD-96F9DE56FB62",
+                "@source_host": "production-bseapp-001.mgmt.pg.net.local",
+                "@message": "IdeaLinkClicked",
+                "@source_version": "1.0.1773",
+                "@type": "java-logback-event:IdeaLinkClicked",
+                "@location": "pg",
+                "@storage_class": "long",
+                "@es_index": "logstash-long-2014.06.30"
+            },
+            "sort": [1404137903450]
+        }
+    ]
+}}

@@ -1,0 +1,22 @@
+[
+    {
+        "id": "68E27356-0064-11E4-AEFD-96F9DE56FB62",
+        "author_name": "Marina Mata",
+        "eventType": "IdeaLinkClicked",
+        "recipient": "fcruz",
+        "stock_name": "Lojas Renner SA",
+        "stock_ticker": "LREN3 BZ",
+        "timestamp": "2014-06-30T14:39:57.128+0000",
+        "message": "IdeaLinkClicked"
+    },
+    {
+        "id": "6D32EFBA-0061-11E4-8104-B645E8B02034",
+        "author_name": "Jonathan Durant",
+        "eventType": "IdeaLinkClicked",
+        "recipient": "bdevedjian",
+        "stock_name": "Swedish Match AB",
+        "stock_ticker": "SWMA SS",
+        "timestamp": "2014-06-30T14:18:36.209+0000",
+        "message": "IdeaLinkClicked"
+    }
+]
