@@ -4,16 +4,8 @@ var UserEvents = Backbone.Collection.extend({
 
 var UserAction = Backbone.Model.extend({});
 
-var ActionView = Backbone.View.extend({
-    _action: null,
-
-    initialize: function(options) {
-        this._action = options.action;
-    },
-
-    render: function() {
-        $('.main-container').html('<h1>' + this._action.get('author_name') + '</h1>');
-    }
+var ActionView = Backbone.Marionette.ItemView.extend({
+    template: _.template('<h1><%-author_name%></h1>')
 });
 
 (function() {
@@ -28,7 +20,10 @@ var ActionView = Backbone.View.extend({
         "message": "IdeaLinkClicked"
     });
 
-    var view = new ActionView({action: aUserAction});
-    view.render();
+    var view = new ActionView({model: aUserAction});
 
+    var mainRegion = new Backbone.Marionette.Region({
+        el: '#main-container'
+    });
+    mainRegion.show(view);
 })();
