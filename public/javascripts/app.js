@@ -5,7 +5,7 @@ var UserEvents = Backbone.Collection.extend({
 var UserAction = Backbone.Model.extend({});
 
 var ActionView = Backbone.Marionette.ItemView.extend({
-    template: _.template('<h1><%-author_name%></h1>')
+    template: Handlebars.compile($('#idea-link-clicked-template'))
 });
 
 (function() {

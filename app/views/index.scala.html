@@ -3,12 +3,20 @@
     <head>
         <meta charset="utf-8">
        <link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/main.css")" />
+
+        <script id="idea-link-clicked-template" type="text/x-handlebars-template">
+            <div>On {{timestamp}}</div>
+
+            {{recipient}} clicked on idea for {{stock_name}} ({{stock_ticker}}) from<br>
+            {{author_name}}
+        </script>
     </head>
 
     <body>
         <div id="main-container"></div>
         <script src="@routes.Assets.at("javascripts/bower_components/jquery/dist/jquery.js")"></script>
         <script src="@routes.Assets.at("javascripts/bower_components/underscore/underscore.js")"></script>
+        <script src="@routes.Assets.at("javascripts/bower_components/handlebars/handlebars.js")"></script>
         <script src="@routes.Assets.at("javascripts/bower_components/backbone/backbone.js")"></script>
         <script src="@routes.Assets.at("javascripts/bower_components/backbone.babysitter/lib/backbone.babysitter.js")"></script>
         <script src="@routes.Assets.at("javascripts/bower_components/backbone.wreqr/lib/backbone.wreqr.js")"></script>
