@@ -1,3 +1,7 @@
+Backbone.Marionette.TemplateCache.prototype.compileTemplate = function(rawTemplate) {
+    return Handlebars.compile(rawTemplate);
+};
+
 var UserAction = Backbone.Model.extend({});
 
 var UserActions = Backbone.Collection.extend({
@@ -6,7 +10,7 @@ var UserActions = Backbone.Collection.extend({
 });
 
 var ActionView = Backbone.Marionette.ItemView.extend({
-    template: Handlebars.compile($('#idea-link-clicked-template').html())
+    template: $('#idea-link-clicked-template')
 //    template: _.template('<%-author_name%>')
 });
 
