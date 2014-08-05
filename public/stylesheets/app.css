@@ -1,0 +1,48 @@
+body {
+    font-family: verdana, arial, sans-serif;
+    margin: 0;
+}
+
+.card-stack {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+}
+
+.action-card {
+    border-bottom: 1px solid #d3d3d3;
+    padding: 1em;
+    margin: 1em 0;
+    height: 50px;
+    position: relative;
+    top: 0px;
+    left: -999px;
+    width: 100%;
+}
+
+.activityDateTime {
+    float: left;
+    width: 7em;
+    text-align: center;
+}
+
+.time, .fullName {
+    font-weight: bold;
+}
+
+.time {
+    color: #808080;
+}
+
+.date {
+    font-size: 0.8em;
+}
+
+.simulator {
+    position: absolute;
+    bottom: 50px;
+}
+
+.simulator button {
+    font-size: 3em;
+}
