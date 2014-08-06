@@ -23,6 +23,7 @@ body {
 .activityDateTime {
     float: left;
     width: 7em;
+    height: 100%;
     text-align: center;
 }
 
@@ -36,6 +37,11 @@ body {
 
 .date {
     font-size: 0.8em;
+}
+
+.company {
+  float: right;
+  height: 100%;
 }
 
 .simulator {

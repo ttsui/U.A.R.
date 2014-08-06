@@ -25,6 +25,10 @@ var ActionView = Backbone.Marionette.ItemView.extend({
         data.activityDate = timestamp.format("ddd, D MMM");
       }
 
+      if (data.companyName) {
+        data.companyName = data.companyName.replace(' ', '-');
+      }
+      
       return Handlebars.compile($(templateSelector).html())(data);
     },
     
@@ -119,32 +123,9 @@ var ActionStack = Backbone.View.extend({
   }
 });
 
-/*
-var SimulatorView = Backbone.Marionette.ItemView.extend({
-    _actions: null,
-    template: Handlebars.compile( $('#simulator-template').html()),
-    className: 'simulator',
-    events: {
-      'click #new-action': '_onNewAction'
-    },
-    
-    initialize: function(options) {
-      this._actions = options.actions;
-    },
-    
-    _onNewAction: function(event) {
-        
-      this._actions.set([
-      ]);
-    }
-});
-*/
-
 (function() {
-    var stubEvents = [ ];
-
-//    var activities = new UserActions(stubEvents);
-    var activities = new UserActions();
+    var activities = new UserActions(stubEvents);
+//    var activities = new UserActions();
     var view = new ActionStack({ actions: activities, container: $('#main-container') });
     view.render();
 
@@ -161,9 +142,9 @@ var SimulatorView = Backbone.Marionette.ItemView.extend({
     fetchActivity();
     poll();
 
-//    var simulatorRegion = new Backbone.Marionette.Region({
-//        el: '#simulator-container'
-//    });
-//    simulatorRegion.show(new SimulatorView({ actions: actions }));
+    var simulatorRegion = new Backbone.Marionette.Region({
+        el: '#simulator-container'
+    });
+    simulatorRegion.show(new SimulatorView({ actions: activities }));
           
 })();
